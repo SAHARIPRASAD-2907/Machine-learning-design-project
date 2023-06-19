@@ -1,0 +1,7 @@
+There are 2 data folders required for the project 
+
+The first one is 100-sports which can be downloaded from 
+100 Sports Image Classification. https://www.kaggle.com/datasets/gpiosenka/sports-classification. Accessed 21 Apr. 2023.
+
+The second one is pubmed-rct which can be downloaded from 
+PubMed 200k RCT. https://www.kaggle.com/datasets/matthewjansen/pubmed-200k-rtc. Accessed 21 Apr. 2023.

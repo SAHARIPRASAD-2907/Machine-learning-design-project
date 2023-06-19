@@ -1,0 +1,90 @@
+Count of labels present in train data
+METHODS        59353
+RESULTS        57953
+CONCLUSIONS    27168
+BACKGROUND     21727
+OBJECTIVE      13839
+Name: target, dtype: int64
+Count of labels present in test data
+METHODS        9897
+RESULTS        9713
+CONCLUSIONS    4571
+BACKGROUND     3621
+OBJECTIVE      2333
+Name: target, dtype: int64
+Count of labels present in valid data
+METHODS        9964
+RESULTS        9841
+CONCLUSIONS    4582
+BACKGROUND     3449
+OBJECTIVE      2376
+Name: target, dtype: int64
+Count of train sentences 180040
+Count of test sentences 30135
+Count of validation sentences 30212
+Average sentence length of train data 26.338269273494777
+Average sentence length of test data 26.178463580554173
+Average sentence length of validation data 26.42244803389382
+Number of words in vocabulary: 64841
+Top 10 common words ['', '[UNK]', 'the', 'and', 'of', 'in', 'to', 'with', 'a', 'were']
+Least 10 common words ['aarm', 'aaqol', 'aaq', 'aanhui', 'aana', 'aainduced', 'aaigroup', 'aachener', 'aachen']
+Count of labels present in train data
+METHODS        59353
+RESULTS        57953
+CONCLUSIONS    27168
+BACKGROUND     21727
+OBJECTIVE      13839
+Name: target, dtype: int64
+Count of labels present in test data
+METHODS        9897
+RESULTS        9713
+CONCLUSIONS    4571
+BACKGROUND     3621
+OBJECTIVE      2333
+Name: target, dtype: int64
+Count of labels present in valid data
+METHODS        9964
+RESULTS        9841
+CONCLUSIONS    4582
+BACKGROUND     3449
+OBJECTIVE      2376
+Name: target, dtype: int64
+Count of train sentences 180040
+Count of test sentences 30135
+Count of validation sentences 30212
+Average sentence length of train data 26.338269273494777
+Average sentence length of test data 26.178463580554173
+Average sentence length of validation data 26.42244803389382
+Number of words in vocabulary: 64841
+Top 10 common words ['', '[UNK]', 'the', 'and', 'of', 'in', 'to', 'with', 'a', 'were']
+Least 10 common words ['aarm', 'aaqol', 'aaq', 'aanhui', 'aana', 'aainduced', 'aaigroup', 'aachener', 'aachen']
+Count of labels present in train data
+METHODS        59353
+RESULTS        57953
+CONCLUSIONS    27168
+BACKGROUND     21727
+OBJECTIVE      13839
+Name: target, dtype: int64
+Count of labels present in test data
+METHODS        9897
+RESULTS        9713
+CONCLUSIONS    4571
+BACKGROUND     3621
+OBJECTIVE      2333
+Name: target, dtype: int64
+Count of labels present in valid data
+METHODS        9964
+RESULTS        9841
+CONCLUSIONS    4582
+BACKGROUND     3449
+OBJECTIVE      2376
+Name: target, dtype: int64
+Count of train sentences 180040
+Count of test sentences 30135
+Count of validation sentences 30212
+Average sentence length of train data 26.338269273494777
+Average sentence length of test data 26.178463580554173
+Average sentence length of validation data 26.42244803389382
+Number of words in vocabulary: 64841
+Top 10 common words ['', '[UNK]', 'the', 'and', 'of', 'in', 'to', 'with', 'a', 'were']
+Least 10 common words ['aarm', 'aaqol', 'aaq', 'aanhui', 'aana', 'aainduced', 'aaigroup', 'aachener', 'aachen']

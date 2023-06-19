@@ -1,0 +1,1868 @@
+---------- Exploring the Full data ----------
+ ----- Printing shape size and info of Full data -----
+The Full data had a shape of (14572, 3)
+The Full data has a length of 14572
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 14572 entries, 0 to 14571
+Data columns (total 3 columns):
+ #   Column     Non-Null Count  Dtype 
+---  ------     --------------  ----- 
+ 0   filepaths  14572 non-null  object
+ 1   labels     14572 non-null  object
+ 2   data set   14572 non-null  object
+dtypes: object(3)
+memory usage: 341.7+ KB
+None
+Different Object type present in dataset
+filepaths    object
+labels       object
+data set     object
+dtype: object
+Checking if data has null values
+filepaths    0
+labels       0
+data set     0
+dtype: int64
+Number of classes in the dataset 100
+Label count
+|                       |   labels |
+|:----------------------|---------:|
+| formula 1 racing      |      201 |
+| football              |      201 |
+| nascar racing         |      200 |
+| baseball              |      184 |
+| hockey                |      182 |
+| basketball            |      179 |
+| olympic wrestling     |      177 |
+| rings                 |      177 |
+| rugby                 |      176 |
+| canoe slamon          |      174 |
+| roller derby          |      173 |
+| high jump             |      169 |
+| figure skating women  |      169 |
+| rollerblade racing    |      169 |
+| field hockey          |      168 |
+| uneven bars           |      168 |
+| golf                  |      167 |
+| polo                  |      167 |
+| swimming              |      167 |
+| shot put              |      165 |
+| balance beam          |      162 |
+| giant slalom          |      161 |
+| figure skating pairs  |      161 |
+| lacrosse              |      161 |
+| judo                  |      160 |
+| bull riding           |      159 |
+| skydiving             |      159 |
+| harness racing        |      157 |
+| volleyball            |      157 |
+| snowmobile racing     |      157 |
+| figure skating men    |      156 |
+| billiards             |      155 |
+| sailboat racing       |      154 |
+| rowing                |      153 |
+| surfing               |      152 |
+| curling               |      151 |
+| rock climbing         |      151 |
+| table tennis          |      151 |
+| bmx                   |      150 |
+| horse racing          |      149 |
+| pole vault            |      148 |
+| bobsled               |      148 |
+| hurdles               |      147 |
+| speed skating         |      147 |
+| horse jumping         |      147 |
+| javelin               |      146 |
+| croquet               |      146 |
+| track bicycle         |      145 |
+| sidecar racing        |      145 |
+| fencing               |      145 |
+| fly fishing           |      144 |
+| weightlifting         |      144 |
+| frisbee               |      143 |
+| sumo wrestling        |      143 |
+| parallel bar          |      143 |
+| trapeze               |      142 |
+| cheerleading          |      142 |
+| archery               |      142 |
+| jai alai              |      142 |
+| motorcycle racing     |      142 |
+| tennis                |      141 |
+| cricket               |      140 |
+| ski jumping           |      140 |
+| ice climbing          |      140 |
+| shuffleboard          |      140 |
+| water polo            |      140 |
+| log rolling           |      138 |
+| tug of war            |      138 |
+| luge                  |      137 |
+| bungee jumping        |      135 |
+| disc golf             |      133 |
+| barell racing         |      133 |
+| steer wrestling       |      132 |
+| hang gliding          |      132 |
+| hammer throw          |      132 |
+| bowling               |      130 |
+| chuckwagon racing     |      130 |
+| pommel horse          |      130 |
+| wheelchair racing     |      129 |
+| pole climbing         |      128 |
+| gaga                  |      128 |
+| jousting              |      128 |
+| snow boarding         |      127 |
+| boxing                |      126 |
+| axe throwing          |      123 |
+| air hockey            |      122 |
+| pole dancing          |      122 |
+| ampute football       |      122 |
+| ice yachting          |      122 |
+| mushing               |      121 |
+| bike polo             |      121 |
+| hydroplane racing     |      118 |
+| baton twirling        |      118 |
+| wheelchair basketball |      116 |
+| water cycling         |      113 |
+| horseshoe pitching    |      112 |
+| ultimate              |      109 |
+| arm wrestling         |      109 |
+| wingsuit flying       |      108 |
+| sky surfing           |       69 |
+Label composition in dataset
+|                       |   labels |
+|:----------------------|---------:|
+| formula 1 racing      | 1.37936  |
+| football              | 1.37936  |
+| nascar racing         | 1.3725   |
+| baseball              | 1.2627   |
+| hockey                | 1.24897  |
+| basketball            | 1.22838  |
+| olympic wrestling     | 1.21466  |
+| rings                 | 1.21466  |
+| rugby                 | 1.2078   |
+| canoe slamon          | 1.19407  |
+| roller derby          | 1.18721  |
+| high jump             | 1.15976  |
+| figure skating women  | 1.15976  |
+| rollerblade racing    | 1.15976  |
+| field hockey          | 1.1529   |
+| uneven bars           | 1.1529   |
+| golf                  | 1.14603  |
+| polo                  | 1.14603  |
+| swimming              | 1.14603  |
+| shot put              | 1.13231  |
+| balance beam          | 1.11172  |
+| giant slalom          | 1.10486  |
+| figure skating pairs  | 1.10486  |
+| lacrosse              | 1.10486  |
+| judo                  | 1.098    |
+| bull riding           | 1.09113  |
+| skydiving             | 1.09113  |
+| harness racing        | 1.07741  |
+| volleyball            | 1.07741  |
+| snowmobile racing     | 1.07741  |
+| figure skating men    | 1.07055  |
+| billiards             | 1.06368  |
+| sailboat racing       | 1.05682  |
+| rowing                | 1.04996  |
+| surfing               | 1.0431   |
+| curling               | 1.03623  |
+| rock climbing         | 1.03623  |
+| table tennis          | 1.03623  |
+| bmx                   | 1.02937  |
+| horse racing          | 1.02251  |
+| pole vault            | 1.01565  |
+| bobsled               | 1.01565  |
+| hurdles               | 1.00878  |
+| speed skating         | 1.00878  |
+| horse jumping         | 1.00878  |
+| javelin               | 1.00192  |
+| croquet               | 1.00192  |
+| track bicycle         | 0.995059 |
+| sidecar racing        | 0.995059 |
+| fencing               | 0.995059 |
+| fly fishing           | 0.988197 |
+| weightlifting         | 0.988197 |
+| frisbee               | 0.981334 |
+| sumo wrestling        | 0.981334 |
+| parallel bar          | 0.981334 |
+| trapeze               | 0.974472 |
+| cheerleading          | 0.974472 |
+| archery               | 0.974472 |
+| jai alai              | 0.974472 |
+| motorcycle racing     | 0.974472 |
+| tennis                | 0.967609 |
+| cricket               | 0.960747 |
+| ski jumping           | 0.960747 |
+| ice climbing          | 0.960747 |
+| shuffleboard          | 0.960747 |
+| water polo            | 0.960747 |
+| log rolling           | 0.947022 |
+| tug of war            | 0.947022 |
+| luge                  | 0.940159 |
+| bungee jumping        | 0.926434 |
+| disc golf             | 0.912709 |
+| barell racing         | 0.912709 |
+| steer wrestling       | 0.905847 |
+| hang gliding          | 0.905847 |
+| hammer throw          | 0.905847 |
+| bowling               | 0.892122 |
+| chuckwagon racing     | 0.892122 |
+| pommel horse          | 0.892122 |
+| wheelchair racing     | 0.885259 |
+| pole climbing         | 0.878397 |
+| gaga                  | 0.878397 |
+| jousting              | 0.878397 |
+| snow boarding         | 0.871534 |
+| boxing                | 0.864672 |
+| axe throwing          | 0.844085 |
+| air hockey            | 0.837222 |
+| pole dancing          | 0.837222 |
+| ampute football       | 0.837222 |
+| ice yachting          | 0.837222 |
+| mushing               | 0.83036  |
+| bike polo             | 0.83036  |
+| hydroplane racing     | 0.809772 |
+| baton twirling        | 0.809772 |
+| wheelchair basketball | 0.796047 |
+| water cycling         | 0.77546  |
+| horseshoe pitching    | 0.768597 |
+| ultimate              | 0.74801  |
+| arm wrestling         | 0.74801  |
+| wingsuit flying       | 0.741147 |
+| sky surfing           | 0.473511 |
+---------- Exploring the Train data ----------
+ ----- Printing shape size and info of Train data -----
+The Train data had a shape of (13572, 3)
+The Train data has a length of 13572
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 13572 entries, 0 to 13571
+Data columns (total 3 columns):
+ #   Column     Non-Null Count  Dtype 
+---  ------     --------------  ----- 
+ 0   filepaths  13572 non-null  object
+ 1   labels     13572 non-null  object
+ 2   data set   13572 non-null  object
+dtypes: object(3)
+memory usage: 424.1+ KB
+None
+Different Object type present in dataset
+filepaths    object
+labels       object
+data set     object
+dtype: object
+Checking if data has null values
+filepaths    0
+labels       0
+data set     0
+dtype: int64
+Number of classes in the dataset 100
+Label count
+|                       |   labels |
+|:----------------------|---------:|
+| formula 1 racing      |      191 |
+| football              |      191 |
+| nascar racing         |      190 |
+| baseball              |      174 |
+| hockey                |      172 |
+| basketball            |      169 |
+| olympic wrestling     |      167 |
+| rings                 |      167 |
+| rugby                 |      166 |
+| canoe slamon          |      164 |
+| roller derby          |      163 |
+| high jump             |      159 |
+| figure skating women  |      159 |
+| rollerblade racing    |      159 |
+| field hockey          |      158 |
+| uneven bars           |      158 |
+| golf                  |      157 |
+| polo                  |      157 |
+| swimming              |      157 |
+| shot put              |      155 |
+| balance beam          |      152 |
+| giant slalom          |      151 |
+| figure skating pairs  |      151 |
+| lacrosse              |      151 |
+| judo                  |      150 |
+| bull riding           |      149 |
+| skydiving             |      149 |
+| harness racing        |      147 |
+| volleyball            |      147 |
+| snowmobile racing     |      147 |
+| figure skating men    |      146 |
+| billiards             |      145 |
+| sailboat racing       |      144 |
+| rowing                |      143 |
+| surfing               |      142 |
+| curling               |      141 |
+| rock climbing         |      141 |
+| table tennis          |      141 |
+| bmx                   |      140 |
+| horse racing          |      139 |
+| pole vault            |      138 |
+| bobsled               |      138 |
+| hurdles               |      137 |
+| speed skating         |      137 |
+| horse jumping         |      137 |
+| javelin               |      136 |
+| croquet               |      136 |
+| track bicycle         |      135 |
+| sidecar racing        |      135 |
+| fencing               |      135 |
+| fly fishing           |      134 |
+| weightlifting         |      134 |
+| frisbee               |      133 |
+| sumo wrestling        |      133 |
+| parallel bar          |      133 |
+| trapeze               |      132 |
+| cheerleading          |      132 |
+| archery               |      132 |
+| jai alai              |      132 |
+| motorcycle racing     |      132 |
+| tennis                |      131 |
+| cricket               |      130 |
+| ski jumping           |      130 |
+| ice climbing          |      130 |
+| shuffleboard          |      130 |
+| water polo            |      130 |
+| log rolling           |      128 |
+| tug of war            |      128 |
+| luge                  |      127 |
+| bungee jumping        |      125 |
+| disc golf             |      123 |
+| barell racing         |      123 |
+| steer wrestling       |      122 |
+| hang gliding          |      122 |
+| hammer throw          |      122 |
+| bowling               |      120 |
+| chuckwagon racing     |      120 |
+| pommel horse          |      120 |
+| wheelchair racing     |      119 |
+| pole climbing         |      118 |
+| gaga                  |      118 |
+| jousting              |      118 |
+| snow boarding         |      117 |
+| boxing                |      116 |
+| axe throwing          |      113 |
+| air hockey            |      112 |
+| pole dancing          |      112 |
+| ampute football       |      112 |
+| ice yachting          |      112 |
+| mushing               |      111 |
+| bike polo             |      111 |
+| hydroplane racing     |      108 |
+| baton twirling        |      108 |
+| wheelchair basketball |      106 |
+| water cycling         |      103 |
+| horseshoe pitching    |      102 |
+| ultimate              |       99 |
+| arm wrestling         |       99 |
+| wingsuit flying       |       98 |
+| sky surfing           |       59 |
+Label composition in dataset
+|                       |   labels |
+|:----------------------|---------:|
+| formula 1 racing      | 1.40731  |
+| football              | 1.40731  |
+| nascar racing         | 1.39994  |
+| baseball              | 1.28205  |
+| hockey                | 1.26732  |
+| basketball            | 1.24521  |
+| olympic wrestling     | 1.23047  |
+| rings                 | 1.23047  |
+| rugby                 | 1.22311  |
+| canoe slamon          | 1.20837  |
+| roller derby          | 1.201    |
+| high jump             | 1.17153  |
+| figure skating women  | 1.17153  |
+| rollerblade racing    | 1.17153  |
+| field hockey          | 1.16416  |
+| uneven bars           | 1.16416  |
+| golf                  | 1.15679  |
+| polo                  | 1.15679  |
+| swimming              | 1.15679  |
+| shot put              | 1.14206  |
+| balance beam          | 1.11995  |
+| giant slalom          | 1.11258  |
+| figure skating pairs  | 1.11258  |
+| lacrosse              | 1.11258  |
+| judo                  | 1.10522  |
+| bull riding           | 1.09785  |
+| skydiving             | 1.09785  |
+| harness racing        | 1.08311  |
+| volleyball            | 1.08311  |
+| snowmobile racing     | 1.08311  |
+| figure skating men    | 1.07574  |
+| billiards             | 1.06838  |
+| sailboat racing       | 1.06101  |
+| rowing                | 1.05364  |
+| surfing               | 1.04627  |
+| curling               | 1.0389   |
+| rock climbing         | 1.0389   |
+| table tennis          | 1.0389   |
+| bmx                   | 1.03154  |
+| horse racing          | 1.02417  |
+| pole vault            | 1.0168   |
+| bobsled               | 1.0168   |
+| hurdles               | 1.00943  |
+| speed skating         | 1.00943  |
+| horse jumping         | 1.00943  |
+| javelin               | 1.00206  |
+| croquet               | 1.00206  |
+| track bicycle         | 0.994695 |
+| sidecar racing        | 0.994695 |
+| fencing               | 0.994695 |
+| fly fishing           | 0.987327 |
+| weightlifting         | 0.987327 |
+| frisbee               | 0.979959 |
+| sumo wrestling        | 0.979959 |
+| parallel bar          | 0.979959 |
+| trapeze               | 0.972591 |
+| cheerleading          | 0.972591 |
+| archery               | 0.972591 |
+| jai alai              | 0.972591 |
+| motorcycle racing     | 0.972591 |
+| tennis                | 0.965223 |
+| cricket               | 0.957854 |
+| ski jumping           | 0.957854 |
+| ice climbing          | 0.957854 |
+| shuffleboard          | 0.957854 |
+| water polo            | 0.957854 |
+| log rolling           | 0.943118 |
+| tug of war            | 0.943118 |
+| luge                  | 0.93575  |
+| bungee jumping        | 0.921014 |
+| disc golf             | 0.906278 |
+| barell racing         | 0.906278 |
+| steer wrestling       | 0.89891  |
+| hang gliding          | 0.89891  |
+| hammer throw          | 0.89891  |
+| bowling               | 0.884173 |
+| chuckwagon racing     | 0.884173 |
+| pommel horse          | 0.884173 |
+| wheelchair racing     | 0.876805 |
+| pole climbing         | 0.869437 |
+| gaga                  | 0.869437 |
+| jousting              | 0.869437 |
+| snow boarding         | 0.862069 |
+| boxing                | 0.854701 |
+| axe throwing          | 0.832597 |
+| air hockey            | 0.825228 |
+| pole dancing          | 0.825228 |
+| ampute football       | 0.825228 |
+| ice yachting          | 0.825228 |
+| mushing               | 0.81786  |
+| bike polo             | 0.81786  |
+| hydroplane racing     | 0.795756 |
+| baton twirling        | 0.795756 |
+| wheelchair basketball | 0.78102  |
+| water cycling         | 0.758915 |
+| horseshoe pitching    | 0.751547 |
+| ultimate              | 0.729443 |
+| arm wrestling         | 0.729443 |
+| wingsuit flying       | 0.722075 |
+| sky surfing           | 0.434719 |
+---------- Exploring the Test data ----------
+ ----- Printing shape size and info of Test data -----
+The Test data had a shape of (500, 4)
+The Test data has a length of 500
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 500 entries, 0 to 499
+Data columns (total 4 columns):
+ #   Column     Non-Null Count  Dtype 
+---  ------     --------------  ----- 
+ 0   index      500 non-null    int64 
+ 1   filepaths  500 non-null    object
+ 2   labels     500 non-null    object
+ 3   data set   500 non-null    object
+dtypes: int64(1), object(3)
+memory usage: 15.8+ KB
+None
+Different Object type present in dataset
+index         int64
+filepaths    object
+labels       object
+data set     object
+dtype: object
+Checking if data has null values
+index        0
+filepaths    0
+labels       0
+data set     0
+dtype: int64
+Number of classes in the dataset 100
+Label count
+|                       |   labels |
+|:----------------------|---------:|
+| air hockey            |        5 |
+| pole vault            |        5 |
+| shot put              |        5 |
+| sailboat racing       |        5 |
+| rugby                 |        5 |
+| rowing                |        5 |
+| rollerblade racing    |        5 |
+| roller derby          |        5 |
+| rock climbing         |        5 |
+| rings                 |        5 |
+| pommel horse          |        5 |
+| polo                  |        5 |
+| pole dancing          |        5 |
+| ampute football       |        5 |
+| pole climbing         |        5 |
+| parallel bar          |        5 |
+| olympic wrestling     |        5 |
+| nascar racing         |        5 |
+| mushing               |        5 |
+| motorcycle racing     |        5 |
+| luge                  |        5 |
+| log rolling           |        5 |
+| lacrosse              |        5 |
+| judo                  |        5 |
+| shuffleboard          |        5 |
+| sidecar racing        |        5 |
+| ski jumping           |        5 |
+| sky surfing           |        5 |
+| wheelchair racing     |        5 |
+| wheelchair basketball |        5 |
+| weightlifting         |        5 |
+| water polo            |        5 |
+| water cycling         |        5 |
+| volleyball            |        5 |
+| uneven bars           |        5 |
+| ultimate              |        5 |
+| tug of war            |        5 |
+| trapeze               |        5 |
+| track bicycle         |        5 |
+| tennis                |        5 |
+| table tennis          |        5 |
+| swimming              |        5 |
+| surfing               |        5 |
+| sumo wrestling        |        5 |
+| steer wrestling       |        5 |
+| speed skating         |        5 |
+| snowmobile racing     |        5 |
+| snow boarding         |        5 |
+| skydiving             |        5 |
+| jousting              |        5 |
+| javelin               |        5 |
+| jai alai              |        5 |
+| disc golf             |        5 |
+| croquet               |        5 |
+| cricket               |        5 |
+| chuckwagon racing     |        5 |
+| cheerleading          |        5 |
+| canoe slamon          |        5 |
+| bungee jumping        |        5 |
+| bull riding           |        5 |
+| boxing                |        5 |
+| bowling               |        5 |
+| bobsled               |        5 |
+| bmx                   |        5 |
+| billiards             |        5 |
+| bike polo             |        5 |
+| baton twirling        |        5 |
+| basketball            |        5 |
+| baseball              |        5 |
+| barell racing         |        5 |
+| balance beam          |        5 |
+| axe throwing          |        5 |
+| arm wrestling         |        5 |
+| archery               |        5 |
+| curling               |        5 |
+| fencing               |        5 |
+| ice yachting          |        5 |
+| field hockey          |        5 |
+| ice climbing          |        5 |
+| hydroplane racing     |        5 |
+| hurdles               |        5 |
+| horseshoe pitching    |        5 |
+| horse racing          |        5 |
+| horse jumping         |        5 |
+| hockey                |        5 |
+| high jump             |        5 |
+| harness racing        |        5 |
+| hang gliding          |        5 |
+| hammer throw          |        5 |
+| golf                  |        5 |
+| giant slalom          |        5 |
+| gaga                  |        5 |
+| frisbee               |        5 |
+| formula 1 racing      |        5 |
+| football              |        5 |
+| fly fishing           |        5 |
+| figure skating women  |        5 |
+| figure skating pairs  |        5 |
+| figure skating men    |        5 |
+| wingsuit flying       |        5 |
+Label composition in dataset
+|                       |   labels |
+|:----------------------|---------:|
+| air hockey            |        1 |
+| pole vault            |        1 |
+| shot put              |        1 |
+| sailboat racing       |        1 |
+| rugby                 |        1 |
+| rowing                |        1 |
+| rollerblade racing    |        1 |
+| roller derby          |        1 |
+| rock climbing         |        1 |
+| rings                 |        1 |
+| pommel horse          |        1 |
+| polo                  |        1 |
+| pole dancing          |        1 |
+| ampute football       |        1 |
+| pole climbing         |        1 |
+| parallel bar          |        1 |
+| olympic wrestling     |        1 |
+| nascar racing         |        1 |
+| mushing               |        1 |
+| motorcycle racing     |        1 |
+| luge                  |        1 |
+| log rolling           |        1 |
+| lacrosse              |        1 |
+| judo                  |        1 |
+| shuffleboard          |        1 |
+| sidecar racing        |        1 |
+| ski jumping           |        1 |
+| sky surfing           |        1 |
+| wheelchair racing     |        1 |
+| wheelchair basketball |        1 |
+| weightlifting         |        1 |
+| water polo            |        1 |
+| water cycling         |        1 |
+| volleyball            |        1 |
+| uneven bars           |        1 |
+| ultimate              |        1 |
+| tug of war            |        1 |
+| trapeze               |        1 |
+| track bicycle         |        1 |
+| tennis                |        1 |
+| table tennis          |        1 |
+| swimming              |        1 |
+| surfing               |        1 |
+| sumo wrestling        |        1 |
+| steer wrestling       |        1 |
+| speed skating         |        1 |
+| snowmobile racing     |        1 |
+| snow boarding         |        1 |
+| skydiving             |        1 |
+| jousting              |        1 |
+| javelin               |        1 |
+| jai alai              |        1 |
+| disc golf             |        1 |
+| croquet               |        1 |
+| cricket               |        1 |
+| chuckwagon racing     |        1 |
+| cheerleading          |        1 |
+| canoe slamon          |        1 |
+| bungee jumping        |        1 |
+| bull riding           |        1 |
+| boxing                |        1 |
+| bowling               |        1 |
+| bobsled               |        1 |
+| bmx                   |        1 |
+| billiards             |        1 |
+| bike polo             |        1 |
+| baton twirling        |        1 |
+| basketball            |        1 |
+| baseball              |        1 |
+| barell racing         |        1 |
+| balance beam          |        1 |
+| axe throwing          |        1 |
+| arm wrestling         |        1 |
+| archery               |        1 |
+| curling               |        1 |
+| fencing               |        1 |
+| ice yachting          |        1 |
+| field hockey          |        1 |
+| ice climbing          |        1 |
+| hydroplane racing     |        1 |
+| hurdles               |        1 |
+| horseshoe pitching    |        1 |
+| horse racing          |        1 |
+| horse jumping         |        1 |
+| hockey                |        1 |
+| high jump             |        1 |
+| harness racing        |        1 |
+| hang gliding          |        1 |
+| hammer throw          |        1 |
+| golf                  |        1 |
+| giant slalom          |        1 |
+| gaga                  |        1 |
+| frisbee               |        1 |
+| formula 1 racing      |        1 |
+| football              |        1 |
+| fly fishing           |        1 |
+| figure skating women  |        1 |
+| figure skating pairs  |        1 |
+| figure skating men    |        1 |
+| wingsuit flying       |        1 |
+---------- Exploring the Validation data ----------
+ ----- Printing shape size and info of Validation data -----
+The Validation data had a shape of (500, 4)
+The Validation data has a length of 500
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 500 entries, 0 to 499
+Data columns (total 4 columns):
+ #   Column     Non-Null Count  Dtype 
+---  ------     --------------  ----- 
+ 0   index      500 non-null    int64 
+ 1   filepaths  500 non-null    object
+ 2   labels     500 non-null    object
+ 3   data set   500 non-null    object
+dtypes: int64(1), object(3)
+memory usage: 15.8+ KB
+None
+Different Object type present in dataset
+index         int64
+filepaths    object
+labels       object
+data set     object
+dtype: object
+Checking if data has null values
+index        0
+filepaths    0
+labels       0
+data set     0
+dtype: int64
+Number of classes in the dataset 100
+Label count
+|                       |   labels |
+|:----------------------|---------:|
+| air hockey            |        5 |
+| pole vault            |        5 |
+| shot put              |        5 |
+| sailboat racing       |        5 |
+| rugby                 |        5 |
+| rowing                |        5 |
+| rollerblade racing    |        5 |
+| roller derby          |        5 |
+| rock climbing         |        5 |
+| rings                 |        5 |
+| pommel horse          |        5 |
+| polo                  |        5 |
+| pole dancing          |        5 |
+| ampute football       |        5 |
+| pole climbing         |        5 |
+| parallel bar          |        5 |
+| olympic wrestling     |        5 |
+| nascar racing         |        5 |
+| mushing               |        5 |
+| motorcycle racing     |        5 |
+| luge                  |        5 |
+| log rolling           |        5 |
+| lacrosse              |        5 |
+| judo                  |        5 |
+| shuffleboard          |        5 |
+| sidecar racing        |        5 |
+| ski jumping           |        5 |
+| sky surfing           |        5 |
+| wheelchair racing     |        5 |
+| wheelchair basketball |        5 |
+| weightlifting         |        5 |
+| water polo            |        5 |
+| water cycling         |        5 |
+| volleyball            |        5 |
+| uneven bars           |        5 |
+| ultimate              |        5 |
+| tug of war            |        5 |
+| trapeze               |        5 |
+| track bicycle         |        5 |
+| tennis                |        5 |
+| table tennis          |        5 |
+| swimming              |        5 |
+| surfing               |        5 |
+| sumo wrestling        |        5 |
+| steer wrestling       |        5 |
+| speed skating         |        5 |
+| snowmobile racing     |        5 |
+| snow boarding         |        5 |
+| skydiving             |        5 |
+| jousting              |        5 |
+| javelin               |        5 |
+| jai alai              |        5 |
+| disc golf             |        5 |
+| croquet               |        5 |
+| cricket               |        5 |
+| chuckwagon racing     |        5 |
+| cheerleading          |        5 |
+| canoe slamon          |        5 |
+| bungee jumping        |        5 |
+| bull riding           |        5 |
+| boxing                |        5 |
+| bowling               |        5 |
+| bobsled               |        5 |
+| bmx                   |        5 |
+| billiards             |        5 |
+| bike polo             |        5 |
+| baton twirling        |        5 |
+| basketball            |        5 |
+| baseball              |        5 |
+| barell racing         |        5 |
+| balance beam          |        5 |
+| axe throwing          |        5 |
+| arm wrestling         |        5 |
+| archery               |        5 |
+| curling               |        5 |
+| fencing               |        5 |
+| ice yachting          |        5 |
+| field hockey          |        5 |
+| ice climbing          |        5 |
+| hydroplane racing     |        5 |
+| hurdles               |        5 |
+| horseshoe pitching    |        5 |
+| horse racing          |        5 |
+| horse jumping         |        5 |
+| hockey                |        5 |
+| high jump             |        5 |
+| harness racing        |        5 |
+| hang gliding          |        5 |
+| hammer throw          |        5 |
+| golf                  |        5 |
+| giant slalom          |        5 |
+| gaga                  |        5 |
+| frisbee               |        5 |
+| formula 1 racing      |        5 |
+| football              |        5 |
+| fly fishing           |        5 |
+| figure skating women  |        5 |
+| figure skating pairs  |        5 |
+| figure skating men    |        5 |
+| wingsuit flying       |        5 |
+Label composition in dataset
+|                       |   labels |
+|:----------------------|---------:|
+| air hockey            |        1 |
+| pole vault            |        1 |
+| shot put              |        1 |
+| sailboat racing       |        1 |
+| rugby                 |        1 |
+| rowing                |        1 |
+| rollerblade racing    |        1 |
+| roller derby          |        1 |
+| rock climbing         |        1 |
+| rings                 |        1 |
+| pommel horse          |        1 |
+| polo                  |        1 |
+| pole dancing          |        1 |
+| ampute football       |        1 |
+| pole climbing         |        1 |
+| parallel bar          |        1 |
+| olympic wrestling     |        1 |
+| nascar racing         |        1 |
+| mushing               |        1 |
+| motorcycle racing     |        1 |
+| luge                  |        1 |
+| log rolling           |        1 |
+| lacrosse              |        1 |
+| judo                  |        1 |
+| shuffleboard          |        1 |
+| sidecar racing        |        1 |
+| ski jumping           |        1 |
+| sky surfing           |        1 |
+| wheelchair racing     |        1 |
+| wheelchair basketball |        1 |
+| weightlifting         |        1 |
+| water polo            |        1 |
+| water cycling         |        1 |
+| volleyball            |        1 |
+| uneven bars           |        1 |
+| ultimate              |        1 |
+| tug of war            |        1 |
+| trapeze               |        1 |
+| track bicycle         |        1 |
+| tennis                |        1 |
+| table tennis          |        1 |
+| swimming              |        1 |
+| surfing               |        1 |
+| sumo wrestling        |        1 |
+| steer wrestling       |        1 |
+| speed skating         |        1 |
+| snowmobile racing     |        1 |
+| snow boarding         |        1 |
+| skydiving             |        1 |
+| jousting              |        1 |
+| javelin               |        1 |
+| jai alai              |        1 |
+| disc golf             |        1 |
+| croquet               |        1 |
+| cricket               |        1 |
+| chuckwagon racing     |        1 |
+| cheerleading          |        1 |
+| canoe slamon          |        1 |
+| bungee jumping        |        1 |
+| bull riding           |        1 |
+| boxing                |        1 |
+| bowling               |        1 |
+| bobsled               |        1 |
+| bmx                   |        1 |
+| billiards             |        1 |
+| bike polo             |        1 |
+| baton twirling        |        1 |
+| basketball            |        1 |
+| baseball              |        1 |
+| barell racing         |        1 |
+| balance beam          |        1 |
+| axe throwing          |        1 |
+| arm wrestling         |        1 |
+| archery               |        1 |
+| curling               |        1 |
+| fencing               |        1 |
+| ice yachting          |        1 |
+| field hockey          |        1 |
+| ice climbing          |        1 |
+| hydroplane racing     |        1 |
+| hurdles               |        1 |
+| horseshoe pitching    |        1 |
+| horse racing          |        1 |
+| horse jumping         |        1 |
+| hockey                |        1 |
+| high jump             |        1 |
+| harness racing        |        1 |
+| hang gliding          |        1 |
+| hammer throw          |        1 |
+| golf                  |        1 |
+| giant slalom          |        1 |
+| gaga                  |        1 |
+| frisbee               |        1 |
+| formula 1 racing      |        1 |
+| football              |        1 |
+| fly fishing           |        1 |
+| figure skating women  |        1 |
+| figure skating pairs  |        1 |
+| figure skating men    |        1 |
+| wingsuit flying       |        1 |
+---------- Exploring the Full data ----------
+ ----- Printing shape size and info of Full data -----
+The Full data had a shape of (14572, 3)
+The Full data has a length of 14572
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 14572 entries, 0 to 14571
+Data columns (total 3 columns):
+ #   Column     Non-Null Count  Dtype 
+---  ------     --------------  ----- 
+ 0   filepaths  14572 non-null  object
+ 1   labels     14572 non-null  object
+ 2   data set   14572 non-null  object
+dtypes: object(3)
+memory usage: 341.7+ KB
+None
+Different Object type present in dataset
+filepaths    object
+labels       object
+data set     object
+dtype: object
+Checking if data has null values
+filepaths    0
+labels       0
+data set     0
+dtype: int64
+Number of classes in the dataset 100
+Label count
+|                       |   labels |
+|:----------------------|---------:|
+| formula 1 racing      |      201 |
+| football              |      201 |
+| nascar racing         |      200 |
+| baseball              |      184 |
+| hockey                |      182 |
+| basketball            |      179 |
+| olympic wrestling     |      177 |
+| rings                 |      177 |
+| rugby                 |      176 |
+| canoe slamon          |      174 |
+| roller derby          |      173 |
+| high jump             |      169 |
+| figure skating women  |      169 |
+| rollerblade racing    |      169 |
+| field hockey          |      168 |
+| uneven bars           |      168 |
+| golf                  |      167 |
+| polo                  |      167 |
+| swimming              |      167 |
+| shot put              |      165 |
+| balance beam          |      162 |
+| giant slalom          |      161 |
+| figure skating pairs  |      161 |
+| lacrosse              |      161 |
+| judo                  |      160 |
+| bull riding           |      159 |
+| skydiving             |      159 |
+| harness racing        |      157 |
+| volleyball            |      157 |
+| snowmobile racing     |      157 |
+| figure skating men    |      156 |
+| billiards             |      155 |
+| sailboat racing       |      154 |
+| rowing                |      153 |
+| surfing               |      152 |
+| curling               |      151 |
+| rock climbing         |      151 |
+| table tennis          |      151 |
+| bmx                   |      150 |
+| horse racing          |      149 |
+| pole vault            |      148 |
+| bobsled               |      148 |
+| hurdles               |      147 |
+| speed skating         |      147 |
+| horse jumping         |      147 |
+| javelin               |      146 |
+| croquet               |      146 |
+| track bicycle         |      145 |
+| sidecar racing        |      145 |
+| fencing               |      145 |
+| fly fishing           |      144 |
+| weightlifting         |      144 |
+| frisbee               |      143 |
+| sumo wrestling        |      143 |
+| parallel bar          |      143 |
+| trapeze               |      142 |
+| cheerleading          |      142 |
+| archery               |      142 |
+| jai alai              |      142 |
+| motorcycle racing     |      142 |
+| tennis                |      141 |
+| cricket               |      140 |
+| ski jumping           |      140 |
+| ice climbing          |      140 |
+| shuffleboard          |      140 |
+| water polo            |      140 |
+| log rolling           |      138 |
+| tug of war            |      138 |
+| luge                  |      137 |
+| bungee jumping        |      135 |
+| disc golf             |      133 |
+| barell racing         |      133 |
+| steer wrestling       |      132 |
+| hang gliding          |      132 |
+| hammer throw          |      132 |
+| bowling               |      130 |
+| chuckwagon racing     |      130 |
+| pommel horse          |      130 |
+| wheelchair racing     |      129 |
+| pole climbing         |      128 |
+| gaga                  |      128 |
+| jousting              |      128 |
+| snow boarding         |      127 |
+| boxing                |      126 |
+| axe throwing          |      123 |
+| air hockey            |      122 |
+| pole dancing          |      122 |
+| ampute football       |      122 |
+| ice yachting          |      122 |
+| mushing               |      121 |
+| bike polo             |      121 |
+| hydroplane racing     |      118 |
+| baton twirling        |      118 |
+| wheelchair basketball |      116 |
+| water cycling         |      113 |
+| horseshoe pitching    |      112 |
+| ultimate              |      109 |
+| arm wrestling         |      109 |
+| wingsuit flying       |      108 |
+| sky surfing           |       69 |
+Label composition in dataset
+|                       |   labels |
+|:----------------------|---------:|
+| formula 1 racing      | 1.37936  |
+| football              | 1.37936  |
+| nascar racing         | 1.3725   |
+| baseball              | 1.2627   |
+| hockey                | 1.24897  |
+| basketball            | 1.22838  |
+| olympic wrestling     | 1.21466  |
+| rings                 | 1.21466  |
+| rugby                 | 1.2078   |
+| canoe slamon          | 1.19407  |
+| roller derby          | 1.18721  |
+| high jump             | 1.15976  |
+| figure skating women  | 1.15976  |
+| rollerblade racing    | 1.15976  |
+| field hockey          | 1.1529   |
+| uneven bars           | 1.1529   |
+| golf                  | 1.14603  |
+| polo                  | 1.14603  |
+| swimming              | 1.14603  |
+| shot put              | 1.13231  |
+| balance beam          | 1.11172  |
+| giant slalom          | 1.10486  |
+| figure skating pairs  | 1.10486  |
+| lacrosse              | 1.10486  |
+| judo                  | 1.098    |
+| bull riding           | 1.09113  |
+| skydiving             | 1.09113  |
+| harness racing        | 1.07741  |
+| volleyball            | 1.07741  |
+| snowmobile racing     | 1.07741  |
+| figure skating men    | 1.07055  |
+| billiards             | 1.06368  |
+| sailboat racing       | 1.05682  |
+| rowing                | 1.04996  |
+| surfing               | 1.0431   |
+| curling               | 1.03623  |
+| rock climbing         | 1.03623  |
+| table tennis          | 1.03623  |
+| bmx                   | 1.02937  |
+| horse racing          | 1.02251  |
+| pole vault            | 1.01565  |
+| bobsled               | 1.01565  |
+| hurdles               | 1.00878  |
+| speed skating         | 1.00878  |
+| horse jumping         | 1.00878  |
+| javelin               | 1.00192  |
+| croquet               | 1.00192  |
+| track bicycle         | 0.995059 |
+| sidecar racing        | 0.995059 |
+| fencing               | 0.995059 |
+| fly fishing           | 0.988197 |
+| weightlifting         | 0.988197 |
+| frisbee               | 0.981334 |
+| sumo wrestling        | 0.981334 |
+| parallel bar          | 0.981334 |
+| trapeze               | 0.974472 |
+| cheerleading          | 0.974472 |
+| archery               | 0.974472 |
+| jai alai              | 0.974472 |
+| motorcycle racing     | 0.974472 |
+| tennis                | 0.967609 |
+| cricket               | 0.960747 |
+| ski jumping           | 0.960747 |
+| ice climbing          | 0.960747 |
+| shuffleboard          | 0.960747 |
+| water polo            | 0.960747 |
+| log rolling           | 0.947022 |
+| tug of war            | 0.947022 |
+| luge                  | 0.940159 |
+| bungee jumping        | 0.926434 |
+| disc golf             | 0.912709 |
+| barell racing         | 0.912709 |
+| steer wrestling       | 0.905847 |
+| hang gliding          | 0.905847 |
+| hammer throw          | 0.905847 |
+| bowling               | 0.892122 |
+| chuckwagon racing     | 0.892122 |
+| pommel horse          | 0.892122 |
+| wheelchair racing     | 0.885259 |
+| pole climbing         | 0.878397 |
+| gaga                  | 0.878397 |
+| jousting              | 0.878397 |
+| snow boarding         | 0.871534 |
+| boxing                | 0.864672 |
+| axe throwing          | 0.844085 |
+| air hockey            | 0.837222 |
+| pole dancing          | 0.837222 |
+| ampute football       | 0.837222 |
+| ice yachting          | 0.837222 |
+| mushing               | 0.83036  |
+| bike polo             | 0.83036  |
+| hydroplane racing     | 0.809772 |
+| baton twirling        | 0.809772 |
+| wheelchair basketball | 0.796047 |
+| water cycling         | 0.77546  |
+| horseshoe pitching    | 0.768597 |
+| ultimate              | 0.74801  |
+| arm wrestling         | 0.74801  |
+| wingsuit flying       | 0.741147 |
+| sky surfing           | 0.473511 |
+---------- Exploring the Train data ----------
+ ----- Printing shape size and info of Train data -----
+The Train data had a shape of (13572, 3)
+The Train data has a length of 13572
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 13572 entries, 0 to 13571
+Data columns (total 3 columns):
+ #   Column     Non-Null Count  Dtype 
+---  ------     --------------  ----- 
+ 0   filepaths  13572 non-null  object
+ 1   labels     13572 non-null  object
+ 2   data set   13572 non-null  object
+dtypes: object(3)
+memory usage: 424.1+ KB
+None
+Different Object type present in dataset
+filepaths    object
+labels       object
+data set     object
+dtype: object
+Checking if data has null values
+filepaths    0
+labels       0
+data set     0
+dtype: int64
+Number of classes in the dataset 100
+Label count
+|                       |   labels |
+|:----------------------|---------:|
+| formula 1 racing      |      191 |
+| football              |      191 |
+| nascar racing         |      190 |
+| baseball              |      174 |
+| hockey                |      172 |
+| basketball            |      169 |
+| olympic wrestling     |      167 |
+| rings                 |      167 |
+| rugby                 |      166 |
+| canoe slamon          |      164 |
+| roller derby          |      163 |
+| high jump             |      159 |
+| figure skating women  |      159 |
+| rollerblade racing    |      159 |
+| field hockey          |      158 |
+| uneven bars           |      158 |
+| golf                  |      157 |
+| polo                  |      157 |
+| swimming              |      157 |
+| shot put              |      155 |
+| balance beam          |      152 |
+| giant slalom          |      151 |
+| figure skating pairs  |      151 |
+| lacrosse              |      151 |
+| judo                  |      150 |
+| bull riding           |      149 |
+| skydiving             |      149 |
+| harness racing        |      147 |
+| volleyball            |      147 |
+| snowmobile racing     |      147 |
+| figure skating men    |      146 |
+| billiards             |      145 |
+| sailboat racing       |      144 |
+| rowing                |      143 |
+| surfing               |      142 |
+| curling               |      141 |
+| rock climbing         |      141 |
+| table tennis          |      141 |
+| bmx                   |      140 |
+| horse racing          |      139 |
+| pole vault            |      138 |
+| bobsled               |      138 |
+| hurdles               |      137 |
+| speed skating         |      137 |
+| horse jumping         |      137 |
+| javelin               |      136 |
+| croquet               |      136 |
+| track bicycle         |      135 |
+| sidecar racing        |      135 |
+| fencing               |      135 |
+| fly fishing           |      134 |
+| weightlifting         |      134 |
+| frisbee               |      133 |
+| sumo wrestling        |      133 |
+| parallel bar          |      133 |
+| trapeze               |      132 |
+| cheerleading          |      132 |
+| archery               |      132 |
+| jai alai              |      132 |
+| motorcycle racing     |      132 |
+| tennis                |      131 |
+| cricket               |      130 |
+| ski jumping           |      130 |
+| ice climbing          |      130 |
+| shuffleboard          |      130 |
+| water polo            |      130 |
+| log rolling           |      128 |
+| tug of war            |      128 |
+| luge                  |      127 |
+| bungee jumping        |      125 |
+| disc golf             |      123 |
+| barell racing         |      123 |
+| steer wrestling       |      122 |
+| hang gliding          |      122 |
+| hammer throw          |      122 |
+| bowling               |      120 |
+| chuckwagon racing     |      120 |
+| pommel horse          |      120 |
+| wheelchair racing     |      119 |
+| pole climbing         |      118 |
+| gaga                  |      118 |
+| jousting              |      118 |
+| snow boarding         |      117 |
+| boxing                |      116 |
+| axe throwing          |      113 |
+| air hockey            |      112 |
+| pole dancing          |      112 |
+| ampute football       |      112 |
+| ice yachting          |      112 |
+| mushing               |      111 |
+| bike polo             |      111 |
+| hydroplane racing     |      108 |
+| baton twirling        |      108 |
+| wheelchair basketball |      106 |
+| water cycling         |      103 |
+| horseshoe pitching    |      102 |
+| ultimate              |       99 |
+| arm wrestling         |       99 |
+| wingsuit flying       |       98 |
+| sky surfing           |       59 |
+Label composition in dataset
+|                       |   labels |
+|:----------------------|---------:|
+| formula 1 racing      | 1.40731  |
+| football              | 1.40731  |
+| nascar racing         | 1.39994  |
+| baseball              | 1.28205  |
+| hockey                | 1.26732  |
+| basketball            | 1.24521  |
+| olympic wrestling     | 1.23047  |
+| rings                 | 1.23047  |
+| rugby                 | 1.22311  |
+| canoe slamon          | 1.20837  |
+| roller derby          | 1.201    |
+| high jump             | 1.17153  |
+| figure skating women  | 1.17153  |
+| rollerblade racing    | 1.17153  |
+| field hockey          | 1.16416  |
+| uneven bars           | 1.16416  |
+| golf                  | 1.15679  |
+| polo                  | 1.15679  |
+| swimming              | 1.15679  |
+| shot put              | 1.14206  |
+| balance beam          | 1.11995  |
+| giant slalom          | 1.11258  |
+| figure skating pairs  | 1.11258  |
+| lacrosse              | 1.11258  |
+| judo                  | 1.10522  |
+| bull riding           | 1.09785  |
+| skydiving             | 1.09785  |
+| harness racing        | 1.08311  |
+| volleyball            | 1.08311  |
+| snowmobile racing     | 1.08311  |
+| figure skating men    | 1.07574  |
+| billiards             | 1.06838  |
+| sailboat racing       | 1.06101  |
+| rowing                | 1.05364  |
+| surfing               | 1.04627  |
+| curling               | 1.0389   |
+| rock climbing         | 1.0389   |
+| table tennis          | 1.0389   |
+| bmx                   | 1.03154  |
+| horse racing          | 1.02417  |
+| pole vault            | 1.0168   |
+| bobsled               | 1.0168   |
+| hurdles               | 1.00943  |
+| speed skating         | 1.00943  |
+| horse jumping         | 1.00943  |
+| javelin               | 1.00206  |
+| croquet               | 1.00206  |
+| track bicycle         | 0.994695 |
+| sidecar racing        | 0.994695 |
+| fencing               | 0.994695 |
+| fly fishing           | 0.987327 |
+| weightlifting         | 0.987327 |
+| frisbee               | 0.979959 |
+| sumo wrestling        | 0.979959 |
+| parallel bar          | 0.979959 |
+| trapeze               | 0.972591 |
+| cheerleading          | 0.972591 |
+| archery               | 0.972591 |
+| jai alai              | 0.972591 |
+| motorcycle racing     | 0.972591 |
+| tennis                | 0.965223 |
+| cricket               | 0.957854 |
+| ski jumping           | 0.957854 |
+| ice climbing          | 0.957854 |
+| shuffleboard          | 0.957854 |
+| water polo            | 0.957854 |
+| log rolling           | 0.943118 |
+| tug of war            | 0.943118 |
+| luge                  | 0.93575  |
+| bungee jumping        | 0.921014 |
+| disc golf             | 0.906278 |
+| barell racing         | 0.906278 |
+| steer wrestling       | 0.89891  |
+| hang gliding          | 0.89891  |
+| hammer throw          | 0.89891  |
+| bowling               | 0.884173 |
+| chuckwagon racing     | 0.884173 |
+| pommel horse          | 0.884173 |
+| wheelchair racing     | 0.876805 |
+| pole climbing         | 0.869437 |
+| gaga                  | 0.869437 |
+| jousting              | 0.869437 |
+| snow boarding         | 0.862069 |
+| boxing                | 0.854701 |
+| axe throwing          | 0.832597 |
+| air hockey            | 0.825228 |
+| pole dancing          | 0.825228 |
+| ampute football       | 0.825228 |
+| ice yachting          | 0.825228 |
+| mushing               | 0.81786  |
+| bike polo             | 0.81786  |
+| hydroplane racing     | 0.795756 |
+| baton twirling        | 0.795756 |
+| wheelchair basketball | 0.78102  |
+| water cycling         | 0.758915 |
+| horseshoe pitching    | 0.751547 |
+| ultimate              | 0.729443 |
+| arm wrestling         | 0.729443 |
+| wingsuit flying       | 0.722075 |
+| sky surfing           | 0.434719 |
+---------- Exploring the Test data ----------
+ ----- Printing shape size and info of Test data -----
+The Test data had a shape of (500, 4)
+The Test data has a length of 500
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 500 entries, 0 to 499
+Data columns (total 4 columns):
+ #   Column     Non-Null Count  Dtype 
+---  ------     --------------  ----- 
+ 0   index      500 non-null    int64 
+ 1   filepaths  500 non-null    object
+ 2   labels     500 non-null    object
+ 3   data set   500 non-null    object
+dtypes: int64(1), object(3)
+memory usage: 15.8+ KB
+None
+Different Object type present in dataset
+index         int64
+filepaths    object
+labels       object
+data set     object
+dtype: object
+Checking if data has null values
+index        0
+filepaths    0
+labels       0
+data set     0
+dtype: int64
+Number of classes in the dataset 100
+Label count
+|                       |   labels |
+|:----------------------|---------:|
+| air hockey            |        5 |
+| pole vault            |        5 |
+| shot put              |        5 |
+| sailboat racing       |        5 |
+| rugby                 |        5 |
+| rowing                |        5 |
+| rollerblade racing    |        5 |
+| roller derby          |        5 |
+| rock climbing         |        5 |
+| rings                 |        5 |
+| pommel horse          |        5 |
+| polo                  |        5 |
+| pole dancing          |        5 |
+| ampute football       |        5 |
+| pole climbing         |        5 |
+| parallel bar          |        5 |
+| olympic wrestling     |        5 |
+| nascar racing         |        5 |
+| mushing               |        5 |
+| motorcycle racing     |        5 |
+| luge                  |        5 |
+| log rolling           |        5 |
+| lacrosse              |        5 |
+| judo                  |        5 |
+| shuffleboard          |        5 |
+| sidecar racing        |        5 |
+| ski jumping           |        5 |
+| sky surfing           |        5 |
+| wheelchair racing     |        5 |
+| wheelchair basketball |        5 |
+| weightlifting         |        5 |
+| water polo            |        5 |
+| water cycling         |        5 |
+| volleyball            |        5 |
+| uneven bars           |        5 |
+| ultimate              |        5 |
+| tug of war            |        5 |
+| trapeze               |        5 |
+| track bicycle         |        5 |
+| tennis                |        5 |
+| table tennis          |        5 |
+| swimming              |        5 |
+| surfing               |        5 |
+| sumo wrestling        |        5 |
+| steer wrestling       |        5 |
+| speed skating         |        5 |
+| snowmobile racing     |        5 |
+| snow boarding         |        5 |
+| skydiving             |        5 |
+| jousting              |        5 |
+| javelin               |        5 |
+| jai alai              |        5 |
+| disc golf             |        5 |
+| croquet               |        5 |
+| cricket               |        5 |
+| chuckwagon racing     |        5 |
+| cheerleading          |        5 |
+| canoe slamon          |        5 |
+| bungee jumping        |        5 |
+| bull riding           |        5 |
+| boxing                |        5 |
+| bowling               |        5 |
+| bobsled               |        5 |
+| bmx                   |        5 |
+| billiards             |        5 |
+| bike polo             |        5 |
+| baton twirling        |        5 |
+| basketball            |        5 |
+| baseball              |        5 |
+| barell racing         |        5 |
+| balance beam          |        5 |
+| axe throwing          |        5 |
+| arm wrestling         |        5 |
+| archery               |        5 |
+| curling               |        5 |
+| fencing               |        5 |
+| ice yachting          |        5 |
+| field hockey          |        5 |
+| ice climbing          |        5 |
+| hydroplane racing     |        5 |
+| hurdles               |        5 |
+| horseshoe pitching    |        5 |
+| horse racing          |        5 |
+| horse jumping         |        5 |
+| hockey                |        5 |
+| high jump             |        5 |
+| harness racing        |        5 |
+| hang gliding          |        5 |
+| hammer throw          |        5 |
+| golf                  |        5 |
+| giant slalom          |        5 |
+| gaga                  |        5 |
+| frisbee               |        5 |
+| formula 1 racing      |        5 |
+| football              |        5 |
+| fly fishing           |        5 |
+| figure skating women  |        5 |
+| figure skating pairs  |        5 |
+| figure skating men    |        5 |
+| wingsuit flying       |        5 |
+Label composition in dataset
+|                       |   labels |
+|:----------------------|---------:|
+| air hockey            |        1 |
+| pole vault            |        1 |
+| shot put              |        1 |
+| sailboat racing       |        1 |
+| rugby                 |        1 |
+| rowing                |        1 |
+| rollerblade racing    |        1 |
+| roller derby          |        1 |
+| rock climbing         |        1 |
+| rings                 |        1 |
+| pommel horse          |        1 |
+| polo                  |        1 |
+| pole dancing          |        1 |
+| ampute football       |        1 |
+| pole climbing         |        1 |
+| parallel bar          |        1 |
+| olympic wrestling     |        1 |
+| nascar racing         |        1 |
+| mushing               |        1 |
+| motorcycle racing     |        1 |
+| luge                  |        1 |
+| log rolling           |        1 |
+| lacrosse              |        1 |
+| judo                  |        1 |
+| shuffleboard          |        1 |
+| sidecar racing        |        1 |
+| ski jumping           |        1 |
+| sky surfing           |        1 |
+| wheelchair racing     |        1 |
+| wheelchair basketball |        1 |
+| weightlifting         |        1 |
+| water polo            |        1 |
+| water cycling         |        1 |
+| volleyball            |        1 |
+| uneven bars           |        1 |
+| ultimate              |        1 |
+| tug of war            |        1 |
+| trapeze               |        1 |
+| track bicycle         |        1 |
+| tennis                |        1 |
+| table tennis          |        1 |
+| swimming              |        1 |
+| surfing               |        1 |
+| sumo wrestling        |        1 |
+| steer wrestling       |        1 |
+| speed skating         |        1 |
+| snowmobile racing     |        1 |
+| snow boarding         |        1 |
+| skydiving             |        1 |
+| jousting              |        1 |
+| javelin               |        1 |
+| jai alai              |        1 |
+| disc golf             |        1 |
+| croquet               |        1 |
+| cricket               |        1 |
+| chuckwagon racing     |        1 |
+| cheerleading          |        1 |
+| canoe slamon          |        1 |
+| bungee jumping        |        1 |
+| bull riding           |        1 |
+| boxing                |        1 |
+| bowling               |        1 |
+| bobsled               |        1 |
+| bmx                   |        1 |
+| billiards             |        1 |
+| bike polo             |        1 |
+| baton twirling        |        1 |
+| basketball            |        1 |
+| baseball              |        1 |
+| barell racing         |        1 |
+| balance beam          |        1 |
+| axe throwing          |        1 |
+| arm wrestling         |        1 |
+| archery               |        1 |
+| curling               |        1 |
+| fencing               |        1 |
+| ice yachting          |        1 |
+| field hockey          |        1 |
+| ice climbing          |        1 |
+| hydroplane racing     |        1 |
+| hurdles               |        1 |
+| horseshoe pitching    |        1 |
+| horse racing          |        1 |
+| horse jumping         |        1 |
+| hockey                |        1 |
+| high jump             |        1 |
+| harness racing        |        1 |
+| hang gliding          |        1 |
+| hammer throw          |        1 |
+| golf                  |        1 |
+| giant slalom          |        1 |
+| gaga                  |        1 |
+| frisbee               |        1 |
+| formula 1 racing      |        1 |
+| football              |        1 |
+| fly fishing           |        1 |
+| figure skating women  |        1 |
+| figure skating pairs  |        1 |
+| figure skating men    |        1 |
+| wingsuit flying       |        1 |
+---------- Exploring the Validation data ----------
+ ----- Printing shape size and info of Validation data -----
+The Validation data had a shape of (500, 4)
+The Validation data has a length of 500
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 500 entries, 0 to 499
+Data columns (total 4 columns):
+ #   Column     Non-Null Count  Dtype 
+---  ------     --------------  ----- 
+ 0   index      500 non-null    int64 
+ 1   filepaths  500 non-null    object
+ 2   labels     500 non-null    object
+ 3   data set   500 non-null    object
+dtypes: int64(1), object(3)
+memory usage: 15.8+ KB
+None
+Different Object type present in dataset
+index         int64
+filepaths    object
+labels       object
+data set     object
+dtype: object
+Checking if data has null values
+index        0
+filepaths    0
+labels       0
+data set     0
+dtype: int64
+Number of classes in the dataset 100
+Label count
+|                       |   labels |
+|:----------------------|---------:|
+| air hockey            |        5 |
+| pole vault            |        5 |
+| shot put              |        5 |
+| sailboat racing       |        5 |
+| rugby                 |        5 |
+| rowing                |        5 |
+| rollerblade racing    |        5 |
+| roller derby          |        5 |
+| rock climbing         |        5 |
+| rings                 |        5 |
+| pommel horse          |        5 |
+| polo                  |        5 |
+| pole dancing          |        5 |
+| ampute football       |        5 |
+| pole climbing         |        5 |
+| parallel bar          |        5 |
+| olympic wrestling     |        5 |
+| nascar racing         |        5 |
+| mushing               |        5 |
+| motorcycle racing     |        5 |
+| luge                  |        5 |
+| log rolling           |        5 |
+| lacrosse              |        5 |
+| judo                  |        5 |
+| shuffleboard          |        5 |
+| sidecar racing        |        5 |
+| ski jumping           |        5 |
+| sky surfing           |        5 |
+| wheelchair racing     |        5 |
+| wheelchair basketball |        5 |
+| weightlifting         |        5 |
+| water polo            |        5 |
+| water cycling         |        5 |
+| volleyball            |        5 |
+| uneven bars           |        5 |
+| ultimate              |        5 |
+| tug of war            |        5 |
+| trapeze               |        5 |
+| track bicycle         |        5 |
+| tennis                |        5 |
+| table tennis          |        5 |
+| swimming              |        5 |
+| surfing               |        5 |
+| sumo wrestling        |        5 |
+| steer wrestling       |        5 |
+| speed skating         |        5 |
+| snowmobile racing     |        5 |
+| snow boarding         |        5 |
+| skydiving             |        5 |
+| jousting              |        5 |
+| javelin               |        5 |
+| jai alai              |        5 |
+| disc golf             |        5 |
+| croquet               |        5 |
+| cricket               |        5 |
+| chuckwagon racing     |        5 |
+| cheerleading          |        5 |
+| canoe slamon          |        5 |
+| bungee jumping        |        5 |
+| bull riding           |        5 |
+| boxing                |        5 |
+| bowling               |        5 |
+| bobsled               |        5 |
+| bmx                   |        5 |
+| billiards             |        5 |
+| bike polo             |        5 |
+| baton twirling        |        5 |
+| basketball            |        5 |
+| baseball              |        5 |
+| barell racing         |        5 |
+| balance beam          |        5 |
+| axe throwing          |        5 |
+| arm wrestling         |        5 |
+| archery               |        5 |
+| curling               |        5 |
+| fencing               |        5 |
+| ice yachting          |        5 |
+| field hockey          |        5 |
+| ice climbing          |        5 |
+| hydroplane racing     |        5 |
+| hurdles               |        5 |
+| horseshoe pitching    |        5 |
+| horse racing          |        5 |
+| horse jumping         |        5 |
+| hockey                |        5 |
+| high jump             |        5 |
+| harness racing        |        5 |
+| hang gliding          |        5 |
+| hammer throw          |        5 |
+| golf                  |        5 |
+| giant slalom          |        5 |
+| gaga                  |        5 |
+| frisbee               |        5 |
+| formula 1 racing      |        5 |
+| football              |        5 |
+| fly fishing           |        5 |
+| figure skating women  |        5 |
+| figure skating pairs  |        5 |
+| figure skating men    |        5 |
+| wingsuit flying       |        5 |
+Label composition in dataset
+|                       |   labels |
+|:----------------------|---------:|
+| air hockey            |        1 |
+| pole vault            |        1 |
+| shot put              |        1 |
+| sailboat racing       |        1 |
+| rugby                 |        1 |
+| rowing                |        1 |
+| rollerblade racing    |        1 |
+| roller derby          |        1 |
+| rock climbing         |        1 |
+| rings                 |        1 |
+| pommel horse          |        1 |
+| polo                  |        1 |
+| pole dancing          |        1 |
+| ampute football       |        1 |
+| pole climbing         |        1 |
+| parallel bar          |        1 |
+| olympic wrestling     |        1 |
+| nascar racing         |        1 |
+| mushing               |        1 |
+| motorcycle racing     |        1 |
+| luge                  |        1 |
+| log rolling           |        1 |
+| lacrosse              |        1 |
+| judo                  |        1 |
+| shuffleboard          |        1 |
+| sidecar racing        |        1 |
+| ski jumping           |        1 |
+| sky surfing           |        1 |
+| wheelchair racing     |        1 |
+| wheelchair basketball |        1 |
+| weightlifting         |        1 |
+| water polo            |        1 |
+| water cycling         |        1 |
+| volleyball            |        1 |
+| uneven bars           |        1 |
+| ultimate              |        1 |
+| tug of war            |        1 |
+| trapeze               |        1 |
+| track bicycle         |        1 |
+| tennis                |        1 |
+| table tennis          |        1 |
+| swimming              |        1 |
+| surfing               |        1 |
+| sumo wrestling        |        1 |
+| steer wrestling       |        1 |
+| speed skating         |        1 |
+| snowmobile racing     |        1 |
+| snow boarding         |        1 |
+| skydiving             |        1 |
+| jousting              |        1 |
+| javelin               |        1 |
+| jai alai              |        1 |
+| disc golf             |        1 |
+| croquet               |        1 |
+| cricket               |        1 |
+| chuckwagon racing     |        1 |
+| cheerleading          |        1 |
+| canoe slamon          |        1 |
+| bungee jumping        |        1 |
+| bull riding           |        1 |
+| boxing                |        1 |
+| bowling               |        1 |
+| bobsled               |        1 |
+| bmx                   |        1 |
+| billiards             |        1 |
+| bike polo             |        1 |
+| baton twirling        |        1 |
+| basketball            |        1 |
+| baseball              |        1 |
+| barell racing         |        1 |
+| balance beam          |        1 |
+| axe throwing          |        1 |
+| arm wrestling         |        1 |
+| archery               |        1 |
+| curling               |        1 |
+| fencing               |        1 |
+| ice yachting          |        1 |
+| field hockey          |        1 |
+| ice climbing          |        1 |
+| hydroplane racing     |        1 |
+| hurdles               |        1 |
+| horseshoe pitching    |        1 |
+| horse racing          |        1 |
+| horse jumping         |        1 |
+| hockey                |        1 |
+| high jump             |        1 |
+| harness racing        |        1 |
+| hang gliding          |        1 |
+| hammer throw          |        1 |
+| golf                  |        1 |
+| giant slalom          |        1 |
+| gaga                  |        1 |
+| frisbee               |        1 |
+| formula 1 racing      |        1 |
+| football              |        1 |
+| fly fishing           |        1 |
+| figure skating women  |        1 |
+| figure skating pairs  |        1 |
+| figure skating men    |        1 |
+| wingsuit flying       |        1 |
